@@ -4,8 +4,8 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return "hello"
-    #return app.send_static_file('about.html')
+    #return "hello"
+    return app.send_static_file('about.html')
 
 if __name__ == "__main__":
     port = int(os.environ.get('PORT', 5000))
